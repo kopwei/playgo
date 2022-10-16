@@ -5,9 +5,7 @@ go_library(
     srcs = ["playgo.go"],
     importpath = "github.com/kopwei/playgo/cmd",
     visibility = ["//visibility:private"],
-    deps = [
-        "//playgrpc/server",
-    ],
+    deps = ["//playgrpc/server"],
 )
 
 go_binary(
