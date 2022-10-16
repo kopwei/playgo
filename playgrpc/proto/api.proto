@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package = "github.com/kopwei/playgo/playgrpc/proto";
+
+package proto;
+
+service PlayGrpc {
+  rpc GetSimpleResponce(SimpleMsg) returns (SimpleMsg) {}
+}
+
+message SimpleMsg {
+  string msg = 1;
+}
